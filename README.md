@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Ícaro Ferreira do Amaral
+- José Rodolfo Valério Costa
+- Thamires Lippelt Vieira
 
 Link do Surge: www.link.com.br
 
