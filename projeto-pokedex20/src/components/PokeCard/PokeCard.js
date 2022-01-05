@@ -15,7 +15,7 @@ const PokeCard = (props) => {
 
     return (
         <ContainerCard>
-            <img alt="Foto do Pokémon" src={props.poke.image} />
+            <img alt="Foto do Pokémon" src={props.poke.sprites.front_default} />
             <div>
                 {location.pathname === "/pokedex" ?
                     <button onClick={delPoke}>Remover da Pokédex</button>
