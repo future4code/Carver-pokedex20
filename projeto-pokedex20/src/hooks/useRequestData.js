@@ -1,19 +1,27 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "../constants/url";
 
-const useRequestData = (url) => {
+const useRequestData = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    axios
-      .get(url)
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, [url]);
+    let promises = [];
+    let pokemonsList = [];
+    for (let i = 1; i < 21; i++) {
+      promises.push(
+        axios.get(`${BASE_URL}/${i}`)
+          .then((res) => {
+            let pokemonWhere = { ...res.data, where: "home" }
+            pokemonsList.push(pokemonWhere);
+          }));
+    }
+    Promise.all(promises).then(() => {
+      pokemonsList.sort((a, b) => a.id - b.id)
+      setData(pokemonsList)
+    }
+    );
+  }, []);
 
   return data;
 };

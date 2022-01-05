@@ -1,30 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import PokeCard from "../../components/PokeCard/PokeCard";
+import { PokemonContext } from "../../contexts/PokemonContext";
 import { ContainerHome, ContainerCards } from "./styled";
 
 function HomePage() {
-  const poke = {
-    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-  }
+  const pokeContext = useContext(PokemonContext);
+
+  const pokeInfos = pokeContext && pokeContext.map((poke, id) => {
+    if (poke.where === "home") {
+      return <PokeCard key={id} poke={poke} />
+    }
+  })
 
   return (
     <ContainerHome>
       <ContainerCards>
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
-        <PokeCard poke={poke} />
+        {pokeInfos}
       </ContainerCards>
     </ContainerHome>
   );
