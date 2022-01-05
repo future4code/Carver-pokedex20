@@ -25,3 +25,14 @@ export const ContainerCard = styled.div`
             }
     }
 `
+
+export const ButtonCard = styled.button`
+  right: 10px;
+  height: 10px;
+  border-radius: 15px;
+  background-color: #272485 ;
+  color: yellow;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+`;

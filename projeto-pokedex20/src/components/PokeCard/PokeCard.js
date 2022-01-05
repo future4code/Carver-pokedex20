@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerCard } from "./styled";
+import { ButtonCard, ContainerCard } from "./styled";
 import { useLocation } from "react-router-dom";
 
 const PokeCard = (props) => {
@@ -18,11 +18,11 @@ const PokeCard = (props) => {
             <img alt="Foto do Pokémon" src={props.poke.sprites.front_default} />
             <div>
                 {location.pathname === "/pokedex" ?
-                    <button onClick={delPoke}>Remover da Pokédex</button>
+                    <ButtonCard onClick={delPoke}>Remover da Pokédex</ButtonCard>
                     :
-                    <button onClick={addPoke}>Adiconar a Pokédex</button>
+                    <ButtonCard onClick={addPoke}>Adiconar a Pokédex</ButtonCard>
                 }
-                <button>Ver detalhes</button>
+                <ButtonCard>Ver detalhes</ButtonCard>
             </div>
         </ContainerCard>
     )
