@@ -1,10 +1,32 @@
 import React from "react";
+import PokeCard from "../../components/PokeCard/PokeCard";
+import { ContainerHome, ContainerCards } from "./styled";
 
 function HomePage() {
+  const poke = {
+    image: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+  }
+
   return (
-    <div>
-      <h1>Pagina de pokemons</h1>
-    </div>
+    <ContainerHome>
+      <ContainerCards>
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+        <PokeCard poke={poke} />
+      </ContainerCards>
+    </ContainerHome>
   );
 }
 
