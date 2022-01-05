@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
 export const PokeButton = styled.button`
   position: absolute;
   left: 10px;
-  height: 30px;
+  height: 40px;
   border-radius: 15px;
   background-color: #272485 ;
   color: yellow;
@@ -23,17 +23,6 @@ export const PokeButton = styled.button`
   text-align: center;
 `;
 
-export const ListButton = styled.button`
-  position: absolute;
-  right: 10px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #272485 ;
-  color: yellow;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: center;
-`;
 
 export const ImgLogo = styled.img`
   width: 150px;
