@@ -1,9 +1,11 @@
 import React from "react";
 import { ButtonCard, ContainerCard } from "./styled";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { goToDetailsPage } from "../../routes/coordinator";
 
 const PokeCard = (props) => {
     const location = useLocation();
+    const navigate = useNavigate()
 
     const addPoke = () => {
         alert(`Pokémon adicionado! =)`);
@@ -22,7 +24,7 @@ const PokeCard = (props) => {
                     :
                     <ButtonCard onClick={addPoke}>Adiconar a Pokédex</ButtonCard>
                 }
-                <ButtonCard>Ver detalhes</ButtonCard>
+                <ButtonCard onClick={() => goToDetailsPage(navigate)}>Ver detalhes</ButtonCard>
             </div>
         </ContainerCard>
     )
