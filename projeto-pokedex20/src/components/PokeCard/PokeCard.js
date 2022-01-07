@@ -5,7 +5,7 @@ import { PokemonContext } from "../../contexts/PokemonContext";
 import { goToDetailsPage } from "../../routes/coordinator";
 
 const PokeCard = (props) => {
-    const [pokemons, setPokemons] =  useContext(PokemonContext);
+    const [pokemons, setPokemons] = useContext(PokemonContext);
     const location = useLocation();
     const navigate= useNavigate();
 
