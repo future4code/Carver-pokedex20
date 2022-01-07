@@ -26,7 +26,7 @@ Nome dos integrantes:
 </p>
 
 <hr/>
-<h2>Você pode ver ele funcionando por aqui: www.link.com.br <h3>
+<h2>Você pode ver ele funcionando por aqui: http://tiz-pokedex.surge.sh/ <h3>
 <hr/>
   
 ### Features
