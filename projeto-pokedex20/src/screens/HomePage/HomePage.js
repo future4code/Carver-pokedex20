@@ -1,18 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import PokeCard from "../../components/PokeCard/PokeCard";
 import { PokemonContext } from "../../contexts/PokemonContext";
 import { ContainerHome, ContainerCards } from "./styled";
 
 function HomePage() {
-  const pokeContext = useContext(PokemonContext);
+  const [pokemons, setPokemons] = useContext(PokemonContext);
+  const [refresh, setRefresh] = useState(false);
 
-  const pokeInfos = pokeContext && pokeContext.map((poke, id) => {
+  const pokeInfos = pokemons && pokemons.map((poke, id) => {
     if (poke.where === "home") {
-      return <PokeCard key={id} poke={poke} />
+      return <PokeCard key={id} poke={poke} refresh={refresh} setRefresh={setRefresh} />
     }
   })
 
-  return (
+   return (
     <ContainerHome>
       <ContainerCards>
         {pokeInfos}
