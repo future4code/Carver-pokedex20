@@ -46,6 +46,14 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Axios
 - React-router-DOM
   
-  
+ ### Imagens do Projeto
+	
+![pokedex1](https://user-images.githubusercontent.com/91162836/148610534-03f4892c-c060-49fa-b2ff-f272b9c02c77.jpg)
+![pokedex2](https://user-images.githubusercontent.com/91162836/148610563-3397c39d-c156-4545-aa21-f2bff238fe90.jpg)
+![pokedex3](https://user-images.githubusercontent.com/91162836/148610595-eb819ae5-d102-45f4-87a6-ac53fc4bc3c1.jpg)
+![Pokedex4](https://user-images.githubusercontent.com/91162836/148610610-54f8c5a0-6778-4252-a575-5b600dccaf91.jpg)
+
+
+
   
   
