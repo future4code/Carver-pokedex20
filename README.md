@@ -1,5 +1,5 @@
 
-<h1 align="center">Pokedex</h1>
+<h1 align="center">Pokedéx</h1>
 
 <hr/>
 Seja bem vinda (o)! 
@@ -15,7 +15,9 @@ Nome dos integrantes:
 - José Rodolfo Valério Costa
 - Thamires Lippelt Vieira
 <hr/>
+
 ### Descrição do Projeto
+
 <p align="center">
   Esse projeto foi desvolvido usando a API da PokéAPI como referência e tem o objetivo de aplicar 
   os conteúdos visto até a semana 12 no curso da Labenu.
