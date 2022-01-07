@@ -21,11 +21,12 @@ Nome dos integrantes:
 <p align="center">
   Esse projeto foi desvolvido usando a API da PokéAPI como referência e tem o objetivo de aplicar 
   os conteúdos visto até a semana 12 no curso da Labenu.
-    O Proeto engloba basicamente mostrar os 20 primeiros pokémons e adicionar ou remover pokémons da sua pokedex. 
-    Também é possível ver os detalhes de cada um desses 20 pokémons, bem como seus poderes, ataques e tipo.
+  O Proeto engloba basicamente mostrar os 20 primeiros pokémons e adicionar ou remover pokémons da sua pokedex. 
+  Também é possível ver os detalhes de cada um desses 20 pokémons, bem como seus poderes, ataques e tipo.
 </p>
 
-<h3>Você pode ver ele funcionando por aqui: www.link.com.br <h3>
+<hr/>
+<h2>Você pode ver ele funcionando por aqui: www.link.com.br <h3>
 <hr/>
   
 ### Features
@@ -40,7 +41,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [React](https://pt-br.reactjs.org/)
   
-  ### 🛠 Libs
+ ### 🛠 Libs
 - Styled-Components
 - Axios
 - React-router-DOM
