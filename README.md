@@ -11,11 +11,11 @@ Status:
 
 <hr/>
 Nome dos integrantes: 
-- *Ícaro Ferreira do Amaral*
-- *José Rodolfo Valério Costa*
-- *Thamires Lippelt Vieira*
+- Ícaro Ferreira do Amaral
+- José Rodolfo Valério Costa
+- Thamires Lippelt Vieira
 <hr/>
-## Descrição do Projeto
+### Descrição do Projeto
 <p align="center">
   Esse projeto foi desvolvido usando a API da PokéAPI como referência e tem o objetivo de aplicar 
   os conteúdos visto até a semana 12 no curso da Labenu.
