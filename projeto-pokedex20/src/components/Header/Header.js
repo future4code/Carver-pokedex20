@@ -12,9 +12,9 @@ function Header() {
         <HeaderContainer>
             <ImgLogo alt={"logo"} src={Logo} />
             {location.pathname === "/" ?
-                <PokeButton onClick={() => goToPokedexListPage(navigate)}>Pokedéx</PokeButton>
+                <PokeButton onClick={() => goToPokedexListPage(navigate)}>Pokédex</PokeButton>
                 :
-                <PokeButton onClick={() => goToHomePage(navigate)}>Pokelista</PokeButton>
+                <PokeButton onClick={() => goToHomePage(navigate)}>Pokélista</PokeButton>
             }
         </HeaderContainer>
     );

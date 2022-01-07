@@ -30,7 +30,7 @@ const PokeCard = (props) => {
                 {location.pathname === "/pokedex" ?
                     <ButtonCard onClick={delPoke}>Remover da Pokédex</ButtonCard>
                     :
-                    <ButtonCard onClick={addPoke}>Adiconar a Pokédex</ButtonCard>
+                    <ButtonCard onClick={addPoke}>Adicionar à Pokédex</ButtonCard>
                 }
                 <ButtonCard onClick={() => goToDetailsPage(navigate, props.poke.name)}>Ver detalhes</ButtonCard>
             </div>
