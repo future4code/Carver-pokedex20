@@ -4,12 +4,6 @@
 <hr/>
 Seja bem vinda (o)! 
 <hr/>
-Status: 
-<h4 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
-</h4>
-
-<hr/>
 Nome dos integrantes: 
 - Ícaro Ferreira do Amaral
 - José Rodolfo Valério Costa
