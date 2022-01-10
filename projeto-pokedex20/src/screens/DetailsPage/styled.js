@@ -118,7 +118,8 @@ export const StatsContainer = styled.div`
   ul {
     li {
     margin-bottom: 3px;
-  }}
+   }
+  }
 `;
 
 export const TitleContainer = styled.h3`

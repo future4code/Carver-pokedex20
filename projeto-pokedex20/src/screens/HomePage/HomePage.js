@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import PokeCard from "../../components/PokeCard/PokeCard";
 import { PokemonContext } from "../../contexts/PokemonContext";
-import { ContainerHome, ContainerCards } from "./styled";
+import { ContainerHome, ContainerCards, Teste } from "./styled";
 
 function HomePage() {
   const [pokemons, setPokemons] = useContext(PokemonContext);
@@ -13,7 +13,7 @@ function HomePage() {
     }
   })
 
-   return (
+  return (
     <ContainerHome>
       <ContainerCards>
         {pokeInfos}
