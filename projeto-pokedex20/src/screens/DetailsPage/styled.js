@@ -7,10 +7,13 @@ export const DetailsContainer = styled.main`
   margin: 10px 20px;
   color: #272485;
   flex-direction: column;
-  /* justify-content: space-between; */
 
   h2 {
     text-align: center;
+  }
+
+  ul {
+  list-style: none
   }
 
 `;
@@ -37,7 +40,13 @@ export const ButtonCard = styled.button`
 export const MainContainer = styled.div`
   display: flex;
   width: 90vw;
-  justify-content: space-around;
+  justify-content:  center;
+
+    
+  @media (max-width: 1000px) {
+    flex-direction: column;
+}
+
 `
 
 export const ImagesContainer = styled.div`
@@ -45,19 +54,26 @@ export const ImagesContainer = styled.div`
   height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1000px) {
+    flex-direction: row;
+    align-items: center;
+}
+
 `;
 
 export const ImgPoke = styled.img`
-  width: 12vw;
+  width: 200px;
 `;
 
 export const InfosContainer = styled.div`
   background-color: #f1f1f1;
   color: #272485;
   margin-top: 50px;
-  display: grid;
-  width: 50vw;
+  padding-right: 28px;
+  width: auto;
   display: flex;
 
   div {
@@ -68,6 +84,13 @@ export const InfosContainer = styled.div`
       margin: 2px;
     }
   }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-top: 10px;
+}
 `;
 
 export const TypesContainer = styled.div`
@@ -91,6 +114,12 @@ export const StatsContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin-left: 10px ;
+
+  ul {
+    li {
+    margin-bottom: 3px;
+   }
+  }
 `;
 
 export const TitleContainer = styled.h3`

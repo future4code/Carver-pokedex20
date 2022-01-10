@@ -14,6 +14,10 @@ function DetailsPage() {
 
   const indexPoke = pokemons && pokemons.findIndex((poke) => { return poke.name === params.name });
 
+  const uppercaseFirst = (string) => {
+    return string.charAt(0).toUpperCase() + string.substr(1)
+  }
+
   const addPoke = () => {
     pokemons[indexPoke].where = "pokedex";
     setPokemons(pokemons);
@@ -27,21 +31,21 @@ function DetailsPage() {
   }
 
   const listTypes = infoPoke && infoPoke.types.map((type, id) => {
-    return <li key={id}>{type.type.name}</li>
+    return <li key={id}>{uppercaseFirst(type.type.name)}</li>
   });
 
   const listMoves = infoPoke && infoPoke.moves.map((move, id) => {
     if (id <= 4) {
-      return <li key={id}>{move.move.name}</li>
+      return <li key={id}>{uppercaseFirst(move.move.name)}</li>
     }
   });
+
 
   return (
     <DetailsContainer>
       {infoPoke && <>
 
-        <h2>{infoPoke.name.charAt(0).toUpperCase() + infoPoke.name.substr(1)}</h2>
-
+        <h2>{uppercaseFirst(infoPoke.name)}</h2>
         <ContainerButtons>
           {pokemons && pokemons[indexPoke].where === "pokedex" ?
             <ButtonCard onClick={delPoke}>Remover da Pokédex</ButtonCard>
@@ -60,14 +64,14 @@ function DetailsPage() {
             <div>
               <TypesContainer>
 
-                <TitleContainer>Tipo:</TitleContainer>
+                <TitleContainer>Tipo</TitleContainer>
                 <ul>
                   {infoPoke && listTypes}
                 </ul>
 
               </TypesContainer>
               <MovesContainer>
-                <TitleContainer> Ataques:</TitleContainer>
+                <TitleContainer>Ataques</TitleContainer>
                 <ul>
                   {infoPoke && listMoves}
                 </ul>
@@ -75,7 +79,7 @@ function DetailsPage() {
             </div>
             <div>
               <StatsContainer>
-                <TitleContainer>Poderes</TitleContainer>
+                <TitleContainer>Status</TitleContainer>
                 <ul>
                   <li>HP: {infoPoke.stats[0].base_stat}</li>
                   <li>Ataque: {infoPoke.stats[1].base_stat}</li>

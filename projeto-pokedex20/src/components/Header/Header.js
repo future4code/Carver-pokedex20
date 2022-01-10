@@ -14,7 +14,7 @@ function Header() {
             {location.pathname === "/" ?
                 <PokeButton onClick={() => goToPokedexListPage(navigate)}>Pokédex</PokeButton>
                 :
-                <PokeButton onClick={() => goToHomePage(navigate)}>Pokélista</PokeButton>
+                <PokeButton onClick={() => goToHomePage(navigate)}>PokéLista</PokeButton>
             }
         </HeaderContainer>
     );
